@@ -1,0 +1,273 @@
+/*
+NAME : HAN SEO YOO
+STUDENT # : 9002975
+*/
+
+header{
+    width: 100%;
+    max-width: 1500px;
+    margin:auto;
+    border:1px solid black;
+    background-image: linear-gradient(360deg,blue, red);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div a{
+    text-decoration: none;
+    color: black;
+}
+
+nav div div{
+    position: absolute;
+    border: 1px solid black;
+    width: 150px;
+    display: none;
+    z-index: 1;
+    background-color: white;
+}
+
+nav div div a{
+    display: inline-block;
+    width: 150px;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav div:hover div{
+    display: block;
+}
+
+nav div:hover > a{
+    color: violet;
+    
+}
+
+nav div div a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.middle{
+    width: 100%;
+    max-width: 1500px;
+    margin:auto;
+    display: flex;
+    
+}
+
+main{
+    border:1px solid black;
+    width: 70%;
+    max-width: 1050px;
+    overflow: auto;
+}
+    
+
+aside{
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 20px;
+    background-image: url('../images/Hangul.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 800px) {
+    aside {
+        background-image: url('../images/image8.jpg');
+    }
+}
+
+
+@media (min-width:800px) and (max-width: 1024px) {
+    aside {
+        background-image: url('../images/image6.jpg');
+    }
+}
+
+aside h2{
+    font-weight: bold;
+    color: black;
+    background-color: rgb(248, 199, 206);
+    padding:10px;
+}
+
+aside ul{
+    list-style: none;
+    background-color: rgb(202, 232, 250);
+    padding: 10px;
+}
+
+aside ul a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    max-width: 1500px;
+    margin:auto;
+    border:1px solid black;
+    background-image: radial-gradient(circle,black, gray);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: larger;
+    padding: 20px;
+}
+
+.quote h2{
+    font-weight: bold;
+}
+
+.quote{
+    border: 2px solid red;
+    border-radius: 5px;
+    margin:30px;
+    padding:20px;
+    text-align: center;
+}
+
+.biography h2{
+    background-image: linear-gradient(360deg,blue, red);
+    color: white;
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    align-items: center;
+}
+
+.clippath{
+    display: flex;
+    width: 600px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.circleimg{
+    float: left;
+    width: 300px;
+    clip-path: polygon(0%   0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+main img{
+    width: 200px;
+    height: 200px;
+}
+
+.gallery{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery h2{
+    background-image: linear-gradient(360deg,blue, red);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+.gallery section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-itemst: center;
+    align-items: center;
+    gap: 160px;
+}
+
+.gallery img{
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+.media{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.media h2{
+    background-image: linear-gradient(360deg,blue, red);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.contact{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact h2{
+    
+    background-image: linear-gradient(360deg,blue, red);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+form {
+    background-color: #dbeaf9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input.form-control, select.form-select {
+    border: 1px solid #0f82f6;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus, select.form-select:focus {
+    border-color: #fb1d1d;
+    background-color: #f6ff00;
+    outline: none;
+}
